@@ -1,0 +1,16 @@
+[
+{
+  "modid": "character_mod",
+  "name": "DiamondMiner88's Character Mod",
+  "description": "Placable Characters in Color!",
+  "version": "1.0",
+  "mcversion": "1.12.2",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["DiamondMiner88"],
+  "credits": "Forge, FML, DiamondMiner88, LoreMaster and MrCrayFish (For Their Tutorials)",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
