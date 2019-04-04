@@ -33,7 +33,7 @@ public class ModBlocks {
     public static final Block A_GLASS_WHITE = null;
     public static final Block A_GLASS_YELLOW = null;
 
-    /*
+    ///*
     public static final Block B_CONCRETE_BLACK = null;
     public static final Block B_CONCRETE_BLUE = null;
     public static final Block B_CONCRETE_BROWN = null;
@@ -45,5 +45,5 @@ public class ModBlocks {
     public static final Block B_CONCRETE_MAGENTA = null;
     public static final Block B_CONCRETE_ORANGE = null;
     public static final Block B_CONCRETE_PINK = null;
-    */
+    //*/
 }

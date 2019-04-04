@@ -10,7 +10,7 @@ public class Reference {
     /**
      * The fully qualified name of the version of IProxy that gets injected into {@link Main#proxy} on a PHYSICAL CLIENT
      */
-    public static final String CLIENT_PROXY_CLASS = "tk.diamondbuildz.mod.character.server.ClientProxy";
+    public static final String CLIENT_PROXY_CLASS = "tk.diamondbuildz.mod.character.client.ClientProxy";
 
     /**
      * The fully qualified name of the version of IProxy that gets injected into {@link Main#proxy} on a PHYSICAL/DEDICATED SERVER

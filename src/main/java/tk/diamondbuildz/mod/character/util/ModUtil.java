@@ -8,6 +8,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.registries.IForgeRegistryEntry;
+import net.minecraftforge.registries.IForgeRegistryEntry.Impl;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.Logger;
 import tk.diamondbuildz.mod.character.creativetab.ModCreativeTabs;
@@ -18,6 +19,7 @@ import java.util.Random;
 
 /**
  * Util that is used on BOTH physical sides
+ *
  * Edited by Diamond Made by Cadiboo
  *
  * @author Diamond
@@ -29,9 +31,9 @@ public final class ModUtil {
     private static final Random RANDOM = new Random();
 
     /**
-     * Sets the {@link IForgeRegistryEntry.Impl#setRegistryName(ResourceLocation) Registry Name} and the {@link Item#setTranslationKey(String) Translation Key} (if applicable) for the entry
+     * Sets the {@link Impl#setRegistryName(ResourceLocation) Registry Name} and the {@link Item#setTranslationKey(String) Translation Key} (if applicable) for the entry
      *
-     * @param entry the {@link IForgeRegistryEntry.Impl IForgeRegistryEntry.Impl<?>} to set the names for
+     * @param entry the {@link Impl IForgeRegistryEntry.Impl<?>} to set the names for
      * @param name  the name for the entry that the registry name is derived from
      * @return the entry
      */
@@ -41,9 +43,9 @@ public final class ModUtil {
     }
 
     /**
-     * Sets the {@link IForgeRegistryEntry.Impl#setRegistryName(ResourceLocation) Registry Name} and the {@link Item#setTranslationKey(String) Translation Key} (if applicable) for the entry
+     * Sets the {@link Impl#setRegistryName(ResourceLocation) Registry Name} and the {@link Item#setTranslationKey(String) Translation Key} (if applicable) for the entry
      *
-     * @param entry        the {@link IForgeRegistryEntry.Impl IForgeRegistryEntry.Impl<?>} to set the names for
+     * @param entry        the {@link Impl IForgeRegistryEntry.Impl<?>} to set the names for
      * @param registryName the registry name for the entry that the translation key is also derived from
      * @return the entry
      */
@@ -53,9 +55,9 @@ public final class ModUtil {
     }
 
     /**
-     * Sets the {@link IForgeRegistryEntry.Impl#setRegistryName(ResourceLocation) Registry Name} and the {@link Item#setTranslationKey(String) Translation Key} (if applicable) for the entry
+     * Sets the {@link Impl#setRegistryName(ResourceLocation) Registry Name} and the {@link Item#setTranslationKey(String) Translation Key} (if applicable) for the entry
      *
-     * @param entry          the {@link IForgeRegistryEntry.Impl IForgeRegistryEntry.Impl<?>} to set the names for
+     * @param entry          the {@link Impl IForgeRegistryEntry.Impl<?>} to set the names for
      * @param registryName   the registry name for the entry
      * @param translationKey the unlocalized name for the entry
      * @return the entry

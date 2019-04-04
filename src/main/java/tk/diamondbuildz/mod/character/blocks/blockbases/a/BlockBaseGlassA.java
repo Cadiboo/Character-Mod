@@ -50,7 +50,7 @@ public class BlockBaseGlassA extends Block {
     @Override
     public IBlockState getActualState(IBlockState state, IBlockAccess worldIn, BlockPos pos) { return state; }
     @Override
-    public BlockRenderLayer getBlockLayer() {
+    public BlockRenderLayer getRenderLayer() {
         return BlockRenderLayer.TRANSLUCENT;
     }
     @Override
@@ -86,11 +86,11 @@ public class BlockBaseGlassA extends Block {
         if (harvesters.get() != null) {
             entityPlayer = harvesters.get();
             Item MainHandHeldItem = entityPlayer.getHeldItemMainhand().getItem();
-            if (MainHandHeldItem.equals(ModItems.TOOL_DIAMOND_GLASS_CUTTER) || MainHandHeldItem.equals(ModItems.TOOL_IRON_GLASS_CUTTER)) {
+            if (MainHandHeldItem.equals(ModItems.DIAMOND_GLASS_CUTTER) || MainHandHeldItem.equals(ModItems.IRON_GLASS_CUTTER)) {
                 this.quantity = 1;
             }
             else {
-                this.quantity = Main.randomNumber(1, 10);
+                this.quantity = Main.randomNumber(0, 4);
             }
         }
         return this.quantity;

@@ -8249,7 +8249,32 @@
     </favorites_list>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/blocks/blockbases/a/BlockBaseGlassA.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="53" column="44" selection-start-line="53" selection-start-column="44" selection-end-line="53" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/blocks/blockbases/a/BlockBaseConcreteA.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="59" column="5" lean-forward="true" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -8276,6 +8301,11 @@
       <find>setCustomM</find>
       <find>static</find>
       <find>getName</find>
+      <find>setTran</find>
+      <find>getBlock</find>
+      <find>getBlockLayer</find>
+      <find>BlockRenderLayer</find>
+      <find>getState</find>
     </findStrings>
     <replaceStrings>
       <replace>brown</replace>
@@ -8316,30 +8346,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/blocks/a/glass/AGlassBrown.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/blocks/a/glass/AGlassPink.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/blocks/a/glass/AGlassOrange.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/blocks/a/glass/AGlassMagenta.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/blocks/a/glass/AGlassLime.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/blocks/a/glass/AGlassLightBlue.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/blocks/a/glass/AGlassClear.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/blocks/a/glass/AGlassCyan.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/blocks/a/glass/AGlassGray.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/blocks/a/glass/AGlassGreen.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/blocks/a/glass/AGlassRed.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/blocks/a/glass/AGlassSilver.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/blocks/a/glass/AGlassWhite.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/blocks/a/glass/AGlassYellow.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/items/ItemBase.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/creativetabs/ModCreativeTabs.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/creativetab/CustomTabs.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/blocks/blockbases/BlockBase.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/items/ToolGlassCutter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/items/ItemGlassCutter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/creativetab/ModCreativeTabs.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/util/ModUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/character_mod/models/block/a_glass_black.json" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/character_mod/models/block/B_CONCRETE_PINK.json" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/character_mod/models/block/B_CONCRETE_BLACK.json" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/character_mod/models/block/B_CONCRETE_BLUE.json" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/character_mod/models/block/B_CONCRETE_BROWN.json" />
@@ -8362,17 +8368,41 @@
         <option value="$PROJECT_DIR$/src/main/resources/assets/character_mod/models/item/b_concrete_magenta.json" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/character_mod/models/item/b_concrete_orange.json" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/character_mod/models/item/b_concrete_pink.json" />
-        <option value="$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/blocks/blockbases/a/BlockBaseConcreteA.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/blocks/blockbases/a/BlockBaseGlassA.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/init/ModBlocks.java" />
         <option value="$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/init/ModItems.java" />
         <option value="$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/EventSubscriber.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/character_mod/blockstates/a_concrete_black.json" />
+        <option value="$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/util/Reference.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/client/ClientProxy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/util/ModUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/config/ModConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/client/ClientUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/init/ModBlocks.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/creativetab/ModCreativeTabs.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/server/ServerEventSubscriber.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/server/ServerProxy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/server/ServerUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/client/ClientEventSubscriber.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/character_mod/recipes/glass_white.json" />
+        <option value="$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/blocks/blockbases/a/BlockBaseGlassA.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/character_mod/blockstates/b_concrete_black.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/character_mod/blockstates/b_concrete_brown.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/character_mod/blockstates/b_concrete_blue.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/character_mod/blockstates/b_concrete_cyan.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/character_mod/blockstates/b_concrete_gray.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/character_mod/blockstates/b_concrete_green.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/character_mod/blockstates/b_concrete_light_blue.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/character_mod/blockstates/b_concrete_lime.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/character_mod/blockstates/b_concrete_magenta.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/character_mod/blockstates/b_concrete_pink.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/character_mod/blockstates/b_concrete_orange.json" />
+        <option value="$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/blocks/blockbases/a/BlockBaseConcreteA.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="100" />
-    <option name="y" value="-15" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="236" />
+    <option name="y" value="106" />
     <option name="width" value="1620" />
     <option name="height" value="920" />
   </component>
@@ -8381,6 +8411,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -8415,26 +8446,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="character" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="CharacterMod" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CharacterMod" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="character" type="462c0819:PsiDirectoryNode" />
-              <item name="init" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="ToolWindowHierarchy.ShowToolbar" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Programs/Android/SDK" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554301899922" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554386427350" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Example-Mod-master" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -8443,13 +8464,14 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="I:\Tima-2\Modding\IntelliJ\1.12.2\CharacterMod\src\main\resources\assets\character_mod\textures\items" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="I:\Tima-2\Modding\IntelliJ\1.12.2\CharacterMod\src\main\resources\assets\character_mod\blockstates" />
       <recent name="I:\Tima-2\Modding\IntelliJ\1.12.2\CharacterMod\src\main\resources\assets\character_mod\models\item" />
       <recent name="I:\Tima-2\Modding\IntelliJ\1.12.2\CharacterMod\src\main\resources\assets\character_mod\models\block" />
       <recent name="I:\Tima-2\Modding\IntelliJ\1.12.2\CharacterMod\src\main\java\tk\diamondbuildz\mod\character" />
-      <recent name="I:\Tima-2\Modding\IntelliJ\1.12.2\CharacterMod\src\main\resources\assets\character_mod\textures\items" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
       <recent name="I:\Tima-2\Modding\IntelliJ\1.12.2\CharacterMod\src\main\resources\assets\character_mod\textures\items" />
     </key>
   </component>
@@ -8465,7 +8487,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Minecraft Client">
+  <component name="RunManager" selected="Gradle.CharacterMod [setupDecompWorkspace]">
     <configuration name="Minecraft Client" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="GradleStart" />
       <module name="CharacterMod" />
@@ -8553,6 +8575,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CharacterMod [cleanCache]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="cleanCache" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="CharacterMod [setupDecompWorkspace]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="setupDecompWorkspace" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -8572,7 +8632,15 @@
     <list>
       <item itemvalue="Application.Minecraft Client" />
       <item itemvalue="Application.Minecraft Server" />
+      <item itemvalue="Gradle.CharacterMod [setupDecompWorkspace]" />
+      <item itemvalue="Gradle.CharacterMod [cleanCache]" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.CharacterMod [cleanCache]" />
+        <item itemvalue="Gradle.CharacterMod [setupDecompWorkspace]" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -8597,9 +8665,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17982924" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17022412" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -8607,8 +8676,8 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.3286445" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49938875" weight="0.45140666" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286445" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49938875" weight="0.31737775" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -8616,7 +8685,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32882413" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50061125" side_tool="true" weight="0.4529148" />
-      <window_info anchor="bottom" id="Build" order="10" weight="0.3295964" />
+      <window_info anchor="bottom" id="Build" order="10" weight="0.32882413" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32778355" />
       <window_info anchor="bottom" auto_hide="true" content_ui="combo" id="Hierarchy" order="12" type="SLIDING" weight="0.17152466" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -8631,209 +8700,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/models/block/a_glass_cyan.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/models/block/a_glass_gray.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/models/block/a_glass_green.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/models/block/a_glass_light_blue.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/models/block/a_glass_lime.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/models/block/a_glass_magenta.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/models/block/a_glass_orange.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/models/block/a_glass_pink.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/models/block/a_glass_purple.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/models/block/a_glass_red.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/models/block/a_glass_silver.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/models/block/a_glass_white.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/models/block/a_glass_yellow.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/models/block/a_concrete_white.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/models/block/b_concrete_pink.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/models/block/b_concrete_black.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/models/block/b_concrete_blue.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/models/block/b_concrete_brown.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/models/block/b_concrete_cyan.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/models/block/b_concrete_gray.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/models/block/b_concrete_green.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/models/block/b_concrete_light_blue.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/models/block/b_concrete_lime.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/models/block/b_concrete_orange.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/models/block/b_concrete_magenta.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="62" selection-start-line="26" selection-start-column="62" selection-end-line="26" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/models/item/a_glass_pink.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/models/item/a_concrete_white.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="51" selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/models/item/a_concrete_black.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="52" lean-forward="true" selection-start-line="1" selection-start-column="52" selection-end-line="1" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/models/item/b_concrete_black.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="51" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/models/item/b_concrete_blue.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="50" selection-start-line="1" selection-start-column="50" selection-end-line="1" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/models/item/b_concrete_brown.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="51" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/models/item/b_concrete_cyan.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="50" selection-start-line="1" selection-start-column="50" selection-end-line="1" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/models/item/b_concrete_gray.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/models/item/b_concrete_green.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="51" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/models/item/b_concrete_light_blue.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="56" selection-start-line="1" selection-start-column="56" selection-end-line="1" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/models/item/b_concrete_lime.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="50" selection-start-line="1" selection-start-column="50" selection-end-line="1" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/models/item/b_concrete_magenta.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="53" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/models/item/b_concrete_orange.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -8851,17 +8717,13 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/textures/items/iron_glass_cutter.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.4.2705/snapshot/20171003/forgeSrc-1.12.2-14.23.4.2705-sources.jar!/net/minecraft/block/BlockColored.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="17" column="72" lean-forward="true" selection-start-line="17" selection-start-column="72" selection-end-line="17" selection-end-column="72" />
-          <folding>
-            <element signature="e#683#697#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.4.2705/snapshot/20171003/forgeSrc-1.12.2-14.23.4.2705-sources.jar!/net/minecraft/block/BlockCompressedPowered.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.4.2705/snapshot/20171003/forgeSrc-1.12.2-14.23.4.2705-sources.jar!/net/minecraft/block/BlockColored.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.4.2705/snapshot/20171003/forgeSrc-1.12.2-14.23.4.2705-sources.jar!/net/minecraft/block/BlockCompressedPowered.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.4.2705/snapshot/20171003/forgeSrc-1.12.2-14.23.4.2705-sources.jar!/net/minecraft/init/Blocks.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.4.2705/snapshot/20171003/forgeSrc-1.12.2-14.23.4.2705-sources.jar!/net/minecraft/block/BlockConcretePowder.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.4.2705/snapshot/20171003/forgeSrc-1.12.2-14.23.4.2705-sources.jar!/net/minecraft/block/material/Material.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.4.2705/snapshot/20171003/forgeSrc-1.12.2-14.23.4.2705-sources.jar!/net/minecraftforge/fml/common/registry/GameRegistry.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/items/ItemGlassCutter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
@@ -8871,61 +8733,93 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.4.2705/snapshot/20171003/forgeSrc-1.12.2-14.23.4.2705-sources.jar!/net/minecraft/init/Blocks.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/items/ToolGlassCutter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3519">
-          <caret line="324" column="25" lean-forward="true" selection-start-line="324" selection-start-column="25" selection-end-line="324" selection-end-column="25" />
-          <folding>
-            <element signature="e#13972#13979#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.4.2705/snapshot/20171003/forgeSrc-1.12.2-14.23.4.2705-sources.jar!/net/minecraft/block/BlockConcretePowder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="53" column="9" lean-forward="true" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.4.2705/snapshot/20171003/forgeSrc-1.12.2-14.23.4.2705-sources.jar!/net/minecraft/block/material/Material.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/blocks/blockbases/a/BlockBaseConcreteA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+        <state relative-caret-position="68">
+          <caret line="4" column="32" lean-forward="true" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/blocks/blockbases/a/BlockBaseGlassA.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.4.2705/snapshot/20171003/forgeSrc-1.12.2-14.23.4.2705-sources.jar!/net/minecraftforge/registries/IForgeRegistryEntry.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/tabs/TabCharacterMod.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/blockstates/a_concrete_white.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1202">
-          <caret line="76" column="40" selection-start-line="76" selection-start-column="40" selection-end-line="76" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="119">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.4.2705/snapshot/20171003/forgeSrc-1.12.2-14.23.4.2705-sources.jar!/net/minecraftforge/fml/common/registry/GameRegistry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6">
-          <caret line="279" column="22" selection-start-line="279" selection-start-column="22" selection-end-line="279" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/init/ModBlocks.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.4.2705/snapshot/20171003/forgeSrc-1.12.2-14.23.4.2705-sources.jar!/net/minecraftforge/common/config/Config.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/util/Reference.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+          <caret line="12" column="90" selection-start-line="12" selection-start-column="90" selection-end-line="12" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/client/ClientProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.4.2705/snapshot/20171003/forgeSrc-1.12.2-14.23.4.2705-sources.jar!/net/minecraft/item/Item.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/config/ModConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="38" lean-forward="true" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+          <folding>
+            <element signature="e#380#413#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/util/ModUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1039">
+          <caret line="21" column="2" lean-forward="true" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/creativetab/ModCreativeTabs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
+          <folding>
+            <element signature="e#2467#2468#0" expanded="true" />
+            <element signature="e#2515#2516#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.4.2705/stable/39/forgeSrc-1.12.2-14.23.4.2705-sources.jar!/net/minecraftforge/fml/common/Mod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="664">
+          <caret line="373" column="15" selection-start-line="373" selection-start-column="15" selection-end-line="373" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/server/ServerEventSubscriber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -8934,7 +8828,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/EventSubscriber.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
+        <state relative-caret-position="545">
           <caret line="172" column="92" lean-forward="true" selection-start-line="172" selection-start-column="92" selection-end-line="172" selection-end-column="92" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -8942,10 +8836,207 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.4.2705/stable/39/forgeSrc-1.12.2-14.23.4.2705-sources.jar!/net/minecraft/util/text/translation/I18n.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding>
+            <element signature="e#557#558#0" expanded="true" />
+            <element signature="e#611#612#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/server/ServerProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/server/ServerUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/init/ModItems.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+        <state relative-caret-position="459">
+          <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/client/ClientEventSubscriber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1168">
+          <caret line="100" column="52" lean-forward="true" selection-start-line="100" selection-start-column="52" selection-end-line="100" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/init/ModBlocks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" column="15" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/client/ClientUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="37" column="19" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/recipes/glass_white.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/blockstates/a_concrete_black.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/blockstates/b_concrete_brown.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="74" lean-forward="true" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/blockstates/b_concrete_black.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="3" lean-forward="true" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/blockstates/b_concrete_blue.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="60" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/blockstates/b_concrete_cyan.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="60" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/blockstates/b_concrete_gray.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="60" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/blockstates/b_concrete_green.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="61" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/blockstates/b_concrete_light_blue.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="66" selection-start-line="5" selection-start-column="66" selection-end-line="5" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/blockstates/b_concrete_lime.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="60" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/blockstates/b_concrete_magenta.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="63" selection-start-line="5" selection-start-column="63" selection-end-line="5" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/blockstates/b_concrete_pink.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="60" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/character_mod/blockstates/b_concrete_orange.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="62" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.4.2705/stable/39/forgeSrc-1.12.2-14.23.4.2705-sources.jar!/net/minecraft/item/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="378" column="5" lean-forward="true" selection-start-line="378" selection-start-column="5" selection-end-line="378" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/blocks/blockbases/a/BlockBaseGlassA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="53" column="44" selection-start-line="53" selection-start-column="44" selection-end-line="53" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.4.2705/stable/39/forgeSrc-1.12.2-14.23.4.2705-sources.jar!/net/minecraft/util/EnumFacing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-85">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.4.2705/stable/39/forgeSrc-1.12.2-14.23.4.2705-sources.jar!/net/minecraft/block/Block.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="106" column="30" selection-start-line="106" selection-start-column="22" selection-end-line="106" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tk/diamondbuildz/mod/character/blocks/blockbases/a/BlockBaseConcreteA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="59" column="5" lean-forward="true" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
