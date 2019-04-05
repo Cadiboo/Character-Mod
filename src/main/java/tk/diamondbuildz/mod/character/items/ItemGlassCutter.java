@@ -9,7 +9,6 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemTool;
 import tk.diamondbuildz.mod.character.init.ModBlocks;
-import tk.diamondbuildz.mod.character.tabs.TabCharacterMod;
 
 import java.util.Set;
 
@@ -19,7 +18,6 @@ public class ItemGlassCutter extends ItemTool {
             Blocks.GLASS, Blocks.STAINED_GLASS, Blocks.STAINED_GLASS_PANE, Blocks.GLASS_PANE);
     public ItemGlassCutter(Item.ToolMaterial material) {
         super(6.0F, -2.0F, material, EFFECTIVE_ON);
-        setCreativeTab(TabCharacterMod.TAB_CHARACTER_MOD);
     }
 
     @Override

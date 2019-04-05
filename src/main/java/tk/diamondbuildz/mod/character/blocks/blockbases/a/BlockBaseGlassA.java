@@ -39,6 +39,7 @@ public class BlockBaseGlassA extends Block {
         ModUtil.setRegistryNames(this, name);
         ModUtil.setCreativeTab(this);
     }
+
     @Override
     public boolean isFullCube(IBlockState state) { return false; }
     @Override
@@ -61,7 +62,7 @@ public class BlockBaseGlassA extends Block {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 
@@ -76,7 +77,7 @@ public class BlockBaseGlassA extends Block {
     @Override
     public IBlockState getStateForPlacement(World worldIn, BlockPos pos, EnumFacing blockFaceClickedOn, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer) {
         // find the quadrant the player is facing
-        EnumFacing enumfacing = (placer == null) ? EnumFacing.NORTH : EnumFacing.fromAngle(placer.rotationYaw);
+        EnumFacing enumfacing = (placer == null) ? EnumFacing.NORTH : placer.getHorizontalFacing().getOpposite();
 
         return this.getDefaultState().withProperty(FACING, enumfacing);
     }

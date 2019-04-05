@@ -11,6 +11,7 @@ import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.EnumFacing;
+import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
@@ -18,6 +19,7 @@ import net.minecraft.world.World;
 import tk.diamondbuildz.mod.character.util.ModUtil;
 
 import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
 
 public class BlockBaseConcreteA extends Block {
 
@@ -54,23 +56,27 @@ public class BlockBaseConcreteA extends Block {
     }
 
     @Override
+    @Nonnull
+    public IBlockState getStateForPlacement(@Nullable World world, @Nullable BlockPos pos, @Nullable EnumFacing facing, float hitX, float hitY, float hitZ, int meta, @Nullable EntityLivingBase placer, EnumHand hand) {
+        assert placer != null;
+        return this.getDefaultState().withProperty(FACING, placer.getHorizontalFacing().getOpposite());
+    }
+    @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontalIndex(meta);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 
     @Override
     public int getMetaFromState(IBlockState state) {
         EnumFacing facing = state.getValue(FACING);
-
-        int facingbits = facing.getHorizontalIndex();
-        return facingbits;
+        return facing.getHorizontalIndex();
     }
 
     @Override
     public IBlockState getStateForPlacement(World worldIn, BlockPos pos, EnumFacing blockFaceClickedOn, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer) {
         // find the quadrant the player is facing
-        EnumFacing enumfacing = (placer == null) ? EnumFacing.NORTH : EnumFacing.fromAngle(placer.rotationYaw);
+        EnumFacing enumfacing = (placer == null) ? EnumFacing.NORTH : placer.getHorizontalFacing().getOpposite();
 
         return this.getDefaultState().withProperty(FACING, enumfacing);
     }

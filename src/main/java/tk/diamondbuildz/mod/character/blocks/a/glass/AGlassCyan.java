@@ -22,7 +22,7 @@ public class AGlassCyan extends BlockBaseGlassA {
         if (harvesters.get() != null) {
             entityPlayer = harvesters.get();
             Item MainHandHeldItem = entityPlayer.getHeldItemMainhand().getItem();
-            if (MainHandHeldItem.equals(ModItems.TOOL_DIAMOND_GLASS_CUTTER) || MainHandHeldItem.equals(ModItems.TOOL_IRON_GLASS_CUTTER)) {
+            if (MainHandHeldItem.equals(ModItems.DIAMOND_GLASS_CUTTER) || MainHandHeldItem.equals(ModItems.IRON_GLASS_CUTTER)) {
                 this.item = Item.getItemFromBlock(ModBlocks.A_GLASS_CYAN);
             }
             else {
