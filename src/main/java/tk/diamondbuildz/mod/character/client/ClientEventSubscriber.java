@@ -7,7 +7,7 @@ import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
-import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -27,7 +27,7 @@ import static tk.diamondbuildz.mod.character.util.Reference.MOD_ID;
  * @author Diamond
  * @author Cadiboo
  */
-@Mod.EventBusSubscriber(modid = MOD_ID, value = CLIENT)
+@EventBusSubscriber(modid = MOD_ID, value = CLIENT)
 public final class ClientEventSubscriber {
 
     private static final Logger LOGGER = LogManager.getLogger();
@@ -51,10 +51,10 @@ public final class ClientEventSubscriber {
 				.filter(block -> block.getRegistryName().getNamespace().equals(MOD_ID))
 				.forEach(ClientEventSubscriber::registerItemBlockModel);
 		*/
-
         registerItemBlockModel(ModBlocks.A_CONCRETE_BLACK);
         registerItemBlockModel(ModBlocks.A_CONCRETE_WHITE);
 
+        /*
         registerItemBlockModel(ModBlocks.A_GLASS_BLACK);
         registerItemBlockModel(ModBlocks.A_GLASS_BLUE);
         registerItemBlockModel(ModBlocks.A_GLASS_BROWN);
@@ -72,7 +72,7 @@ public final class ClientEventSubscriber {
         registerItemBlockModel(ModBlocks.A_GLASS_SILVER);
         registerItemBlockModel(ModBlocks.A_GLASS_WHITE);
         registerItemBlockModel(ModBlocks.A_GLASS_YELLOW);
-
+        /*
         registerItemBlockModel(ModBlocks.B_CONCRETE_BLACK);
         registerItemBlockModel(ModBlocks.B_CONCRETE_BLUE);
         registerItemBlockModel(ModBlocks.B_CONCRETE_BROWN);
@@ -84,6 +84,7 @@ public final class ClientEventSubscriber {
         registerItemBlockModel(ModBlocks.B_CONCRETE_MAGENTA);
         registerItemBlockModel(ModBlocks.B_CONCRETE_ORANGE);
         registerItemBlockModel(ModBlocks.B_CONCRETE_PINK);
+        */
 
         registerItemModel(ModItems.GLASS_SHARD_BLACK);
         registerItemModel(ModItems.GLASS_SHARD_BLUE);

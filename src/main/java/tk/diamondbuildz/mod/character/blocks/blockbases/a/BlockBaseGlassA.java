@@ -31,13 +31,11 @@ public class BlockBaseGlassA extends Block {
     private int quantity;
     public EntityPlayer entityPlayer;
 
-    public BlockBaseGlassA(@Nonnull String name) {
+    public BlockBaseGlassA() {
         super(Material.GLASS);
         this.setHardness(0.3F);
         this.setSoundType(SoundType.GLASS);
         this.setDefaultState(blockState.getBaseState().withProperty(FACING, EnumFacing.SOUTH));
-        ModUtil.setRegistryNames(this, name);
-        ModUtil.setCreativeTab(this);
     }
 
     @Override
@@ -76,7 +74,6 @@ public class BlockBaseGlassA extends Block {
 
     @Override
     public IBlockState getStateForPlacement(World worldIn, BlockPos pos, EnumFacing blockFaceClickedOn, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer) {
-        // find the quadrant the player is facing
         EnumFacing enumfacing = (placer == null) ? EnumFacing.NORTH : placer.getHorizontalFacing().getOpposite();
 
         return this.getDefaultState().withProperty(FACING, enumfacing);

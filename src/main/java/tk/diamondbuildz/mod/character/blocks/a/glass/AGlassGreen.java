@@ -14,8 +14,8 @@ import java.util.Random;
 public class AGlassGreen extends BlockBaseGlassA {
     public Item item;
     public EntityPlayer entityPlayer;
-    public AGlassGreen(@Nonnull String name) {
-        super(name);
+    public AGlassGreen() {
+
     }
     @Override
     public Item getItemDropped(IBlockState state, Random rand, int fortune) {

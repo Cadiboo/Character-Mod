@@ -3,7 +3,6 @@ package tk.diamondbuildz.mod.character.blocks.blockbases.a;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
-import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyDirection;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
@@ -16,7 +15,6 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
-import tk.diamondbuildz.mod.character.util.ModUtil;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
@@ -28,14 +26,12 @@ public class BlockBaseConcreteA extends Block {
     private static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
     public EntityPlayer entityPlayer;
 
-    public BlockBaseConcreteA(@Nonnull String name) {
+    public BlockBaseConcreteA() {
         super(Material.ROCK);
         this.setSoundType(SoundType.STONE);
         this.setHardness(0.3F);
-        this.setSoundType(SoundType.GLASS);
+        this.setSoundType(SoundType.STONE);
         this.setDefaultState(blockState.getBaseState().withProperty(FACING, EnumFacing.SOUTH));
-        ModUtil.setRegistryNames(this, name);
-        ModUtil.setCreativeTab(this);
     }
     @Override
     public boolean isFullCube(IBlockState state) { return false; }
@@ -75,7 +71,6 @@ public class BlockBaseConcreteA extends Block {
 
     @Override
     public IBlockState getStateForPlacement(World worldIn, BlockPos pos, EnumFacing blockFaceClickedOn, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer) {
-        // find the quadrant the player is facing
         EnumFacing enumfacing = (placer == null) ? EnumFacing.NORTH : placer.getHorizontalFacing().getOpposite();
 
         return this.getDefaultState().withProperty(FACING, enumfacing);

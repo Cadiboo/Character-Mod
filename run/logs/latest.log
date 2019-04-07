@@ -1,80 +1,80 @@
-[06:59:56] [main/INFO]: username: jignatova9@hotmail.com
-[06:59:56] [main/INFO]: Extra: [nogui]
-[06:59:56] [main/INFO]: Password found, attempting login
-[06:59:56] [main/INFO]: Logging in with username & password
-[06:59:57] [main/INFO]: Login Succesful!
-[06:59:57] [main/INFO]: Running with arguments: [--userProperties, [], --assetsDir, C:/Users/fluff/.gradle/caches/minecraft/assets, --assetIndex, 1.12, --userType, mojang, --accessToken{REDACTED}, --version, 1.12.2, --uuid, d518fa31f7324e40bf666b273714d6fa, --username, DiamondMiner88, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, nogui, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
-[06:59:57] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[06:59:57] [main/INFO]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[06:59:57] [main/INFO]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
-[06:59:57] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
-[06:59:57] [main/INFO]: Forge Mod Loader version 14.23.5.2768 for Minecraft 1.12.2 loading
-[06:59:57] [main/INFO]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_202, running on Windows 10:amd64:10.0, installed at C:\Program Files\Java\jdk1.8.0_202\jre
-[06:59:57] [main/ERROR]: Apache Maven library folder was not in the format expected. Using default libraries directory.
-[06:59:57] [main/ERROR]: Full: C:\Users\fluff\.gradle\caches\modules-2\files-2.1\org.apache.maven\maven-artifact\3.5.3\7dc72b6d6d8a6dced3d294ed54c2cc3515ade9f4\maven-artifact-3.5.3.jar
-[06:59:57] [main/ERROR]: Trimmed: c:/users/fluff/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.5.3/
-[06:59:57] [main/INFO]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
-[06:59:57] [main/INFO]: Detected deobfuscated environment, loading log configs for colored console logs.
-[06:59:58] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLCorePlugin (net.minecraftforge.fml.relauncher.FMLCorePlugin), we are in deobf and it's a forge core plugin
-[06:59:58] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLForgePlugin (net.minecraftforge.classloading.FMLForgePlugin), we are in deobf and it's a forge core plugin
-[06:59:58] [main/INFO] [FML]: Searching I:\Tima-2\Modding\IntelliJ\1.12.2\CharacterMod\run\.\mods for mods
-[06:59:58] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweaker
-[06:59:58] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.fml.relauncher.FMLCorePlugin
-[06:59:58] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugin
-[06:59:58] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[06:59:58] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
-[06:59:58] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
-[06:59:58] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[06:59:58] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[06:59:58] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
-[07:00:00] [main/ERROR] [FML]: FML appears to be missing any signature data. This is not a good thing
-[07:00:00] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
-[07:00:00] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
-[07:00:01] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
-[07:00:01] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
-[07:00:01] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
-[07:00:01] [main/INFO] [LaunchWrapper]: Launching wrapped minecraft {net.minecraft.client.main.Main}
-[07:00:01] [main/INFO] [STDOUT]: [net.minecraft.client.main.Main:main:59]: Completely ignored arguments: [nogui]
-[07:00:01] [main/INFO] [net.minecraft.client.Minecraft]: Setting user: DiamondMiner88
-[07:00:04] [main/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:
-[07:00:04] [main/INFO] [net.minecraft.client.Minecraft]: LWJGL Version: 2.9.4
-[07:00:06] [main/INFO] [FML]: -- System Details --
+[21:04:15] [main/INFO]: username: jignatova9@hotmail.com
+[21:04:15] [main/INFO]: Extra: [nogui]
+[21:04:15] [main/INFO]: Password found, attempting login
+[21:04:15] [main/INFO]: Logging in with username & password
+[21:04:16] [main/INFO]: Login Succesful!
+[21:04:16] [main/INFO]: Running with arguments: [--userProperties, [], --assetsDir, C:/Users/fluff/.gradle/caches/minecraft/assets, --assetIndex, 1.12, --userType, mojang, --accessToken{REDACTED}, --version, 1.12.2, --uuid, d518fa31f7324e40bf666b273714d6fa, --username, DiamondMiner88, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, nogui, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[21:04:16] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[21:04:16] [main/INFO]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[21:04:16] [main/INFO]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[21:04:16] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[21:04:16] [main/INFO]: Forge Mod Loader version 14.23.5.2768 for Minecraft 1.12.2 loading
+[21:04:16] [main/INFO]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_202, running on Windows 10:amd64:10.0, installed at C:\Program Files\Java\jdk1.8.0_202\jre
+[21:04:16] [main/ERROR]: Apache Maven library folder was not in the format expected. Using default libraries directory.
+[21:04:16] [main/ERROR]: Full: C:\Users\fluff\.gradle\caches\modules-2\files-2.1\org.apache.maven\maven-artifact\3.5.3\7dc72b6d6d8a6dced3d294ed54c2cc3515ade9f4\maven-artifact-3.5.3.jar
+[21:04:16] [main/ERROR]: Trimmed: c:/users/fluff/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.5.3/
+[21:04:16] [main/INFO]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
+[21:04:16] [main/INFO]: Detected deobfuscated environment, loading log configs for colored console logs.
+[21:04:17] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLCorePlugin (net.minecraftforge.fml.relauncher.FMLCorePlugin), we are in deobf and it's a forge core plugin
+[21:04:17] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLForgePlugin (net.minecraftforge.classloading.FMLForgePlugin), we are in deobf and it's a forge core plugin
+[21:04:17] [main/INFO] [FML]: Searching I:\Tima-2\Modding\IntelliJ\1.12.2\CharacterMod\run\.\mods for mods
+[21:04:17] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweaker
+[21:04:17] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.fml.relauncher.FMLCorePlugin
+[21:04:17] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugin
+[21:04:17] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[21:04:17] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[21:04:17] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[21:04:17] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[21:04:17] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[21:04:17] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[21:04:19] [main/ERROR] [FML]: FML appears to be missing any signature data. This is not a good thing
+[21:04:19] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[21:04:19] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[21:04:20] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[21:04:20] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
+[21:04:20] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
+[21:04:20] [main/INFO] [LaunchWrapper]: Launching wrapped minecraft {net.minecraft.client.main.Main}
+[21:04:20] [main/INFO] [STDOUT]: [net.minecraft.client.main.Main:main:59]: Completely ignored arguments: [nogui]
+[21:04:20] [main/INFO] [net.minecraft.client.Minecraft]: Setting user: DiamondMiner88
+[21:04:24] [main/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:
+[21:04:24] [main/INFO] [net.minecraft.client.Minecraft]: LWJGL Version: 2.9.4
+[21:04:25] [main/INFO] [FML]: -- System Details --
 Details:
 	Minecraft Version: 1.12.2
 	Operating System: Windows 10 (amd64) version 10.0
 	Java Version: 1.8.0_202, Oracle Corporation
 	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
-	Memory: 320088008 bytes (305 MB) / 554172416 bytes (528 MB) up to 3806855168 bytes (3630 MB)
+	Memory: 405532120 bytes (386 MB) / 706215936 bytes (673 MB) up to 3806855168 bytes (3630 MB)
 	JVM Flags: 0 total; 
 	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
 	FML: 
 	Loaded coremods (and transformers): 
 	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.6.0 NVIDIA 419.67' Renderer: 'GeForce RTX 2070/PCIe/SSE2'
-[07:00:06] [main/INFO] [FML]: MinecraftForge v14.23.5.2768 Initialized
-[07:00:06] [main/INFO] [FML]: Starts to replace vanilla recipe ingredients with ore ingredients.
-[07:00:06] [main/INFO] [FML]: Replaced 1036 ore ingredients
-[07:00:06] [main/INFO] [FML]: Searching I:\Tima-2\Modding\IntelliJ\1.12.2\CharacterMod\run\.\mods for mods
-[07:00:08] [main/INFO] [FML]: Forge Mod Loader has identified 5 mods to load
-[07:00:08] [main/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, character_mod] at CLIENT
-[07:00:08] [main/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, character_mod] at SERVER
-[07:00:08] [Thread-3/INFO] [FML]: Using sync timing. 200 frames of Display.update took 160456000 nanos
-[07:00:09] [main/WARN] [character_mod]: Invalid fingerprint detected! The file CharacterMod may have been tampered with. This version will NOT be supported by the author!
-[07:00:09] [main/INFO] [net.minecraft.client.resources.SimpleReloadableResourceManager]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:DiamondMiner88's Character Mod
-[07:00:09] [main/INFO] [FML]: Processing ObjectHolder annotations
-[07:00:09] [main/INFO] [FML]: Found 1215 ObjectHolder annotations
-[07:00:09] [main/INFO] [FML]: Identifying ItemStackHolder annotations
-[07:00:09] [main/INFO] [FML]: Found 1 ItemStackHolder annotations
-[07:00:09] [main/INFO] [FML]: Configured a dormant chunk cache size of 0
-[07:00:09] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
-[07:00:09] [main/INFO] [FML]: Applying holder lookups
-[07:00:09] [main/INFO] [FML]: Holder lookups applied
-[07:00:09] [main/ERROR] [FML]: Exception caught during firing event net.minecraftforge.event.RegistryEvent$Register@4064daeb:
+[21:04:25] [main/INFO] [FML]: MinecraftForge v14.23.5.2768 Initialized
+[21:04:25] [main/INFO] [FML]: Starts to replace vanilla recipe ingredients with ore ingredients.
+[21:04:26] [main/INFO] [FML]: Replaced 1036 ore ingredients
+[21:04:26] [main/INFO] [FML]: Searching I:\Tima-2\Modding\IntelliJ\1.12.2\CharacterMod\run\.\mods for mods
+[21:04:27] [main/INFO] [FML]: Forge Mod Loader has identified 5 mods to load
+[21:04:28] [main/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, character_mod] at CLIENT
+[21:04:28] [main/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, character_mod] at SERVER
+[21:04:28] [Thread-3/INFO] [FML]: Using sync timing. 200 frames of Display.update took 233136000 nanos
+[21:04:28] [main/WARN] [character_mod]: Invalid fingerprint detected! The file CharacterMod may have been tampered with. This version will NOT be supported by the author!
+[21:04:28] [main/INFO] [net.minecraft.client.resources.SimpleReloadableResourceManager]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:DiamondMiner88's Character Mod
+[21:04:29] [main/INFO] [FML]: Processing ObjectHolder annotations
+[21:04:29] [main/INFO] [FML]: Found 1204 ObjectHolder annotations
+[21:04:29] [main/INFO] [FML]: Identifying ItemStackHolder annotations
+[21:04:29] [main/INFO] [FML]: Found 1 ItemStackHolder annotations
+[21:04:29] [main/INFO] [FML]: Configured a dormant chunk cache size of 0
+[21:04:29] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[21:04:29] [main/INFO] [FML]: Applying holder lookups
+[21:04:29] [main/INFO] [FML]: Holder lookups applied
+[21:04:29] [main/ERROR] [FML]: Exception caught during firing event net.minecraftforge.event.RegistryEvent$Register@6acee861:
 java.lang.NullPointerException: null
-	at tk.diamondbuildz.mod.character.EventSubscriber.lambda$onRegisterItemsEvent$0(EventSubscriber.java:143) ~[EventSubscriber.class:?]
+	at tk.diamondbuildz.mod.character.EventSubscriber.lambda$onRegisterItemsEvent$0(EventSubscriber.java:152) ~[EventSubscriber.class:?]
 	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948) ~[?:1.8.0_202]
 	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580) ~[?:1.8.0_202]
-	at tk.diamondbuildz.mod.character.EventSubscriber.onRegisterItemsEvent(EventSubscriber.java:142) ~[EventSubscriber.class:?]
-	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_5_EventSubscriber_onRegisterItemsEvent_Register.invoke(.dynamic) ~[?:?]
+	at tk.diamondbuildz.mod.character.EventSubscriber.onRegisterItemsEvent(EventSubscriber.java:151) ~[EventSubscriber.class:?]
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_6_EventSubscriber_onRegisterItemsEvent_Register.invoke(.dynamic) ~[?:?]
 	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90) ~[ASMEventHandler.class:?]
 	at net.minecraftforge.fml.common.eventhandler.EventBus$1.invoke(EventBus.java:144) ~[EventBus$1.class:?]
 	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182) [EventBus.class:?]
@@ -96,23 +96,23 @@ java.lang.NullPointerException: null
 	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_202]
 	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
 	at GradleStart.main(GradleStart.java:25) [start/:?]
-[07:00:09] [main/ERROR] [FML]: Index: 2 Listeners:
-[07:00:09] [main/ERROR] [FML]: 0: NORMAL
-[07:00:09] [main/ERROR] [FML]: 1: net.minecraftforge.fml.common.eventhandler.EventBus$1@1a7ba443
-[07:00:09] [main/ERROR] [FML]: 2: net.minecraftforge.fml.common.eventhandler.EventBus$1@d750a
-[07:00:09] [main/ERROR] [FML]: 3: net.minecraftforge.fml.common.eventhandler.EventBus$1@38ebee36
-[07:00:09] [main/INFO] [STDOUT]: [net.minecraft.init.Bootstrap:printToSYSOUT:629]: ---- Minecraft Crash Report ----
-// This doesn't make any sense!
+[21:04:29] [main/ERROR] [FML]: Index: 2 Listeners:
+[21:04:29] [main/ERROR] [FML]: 0: NORMAL
+[21:04:29] [main/ERROR] [FML]: 1: net.minecraftforge.fml.common.eventhandler.EventBus$1@28488f2e
+[21:04:29] [main/ERROR] [FML]: 2: net.minecraftforge.fml.common.eventhandler.EventBus$1@fe9d54b
+[21:04:29] [main/ERROR] [FML]: 3: net.minecraftforge.fml.common.eventhandler.EventBus$1@78519d63
+[21:04:29] [main/INFO] [STDOUT]: [net.minecraft.init.Bootstrap:printToSYSOUT:629]: ---- Minecraft Crash Report ----
+// Hi. I'm Minecraft, and I'm a crashaholic.
 
-Time: 4/5/19 7:00 AM
+Time: 4/6/19 9:04 PM
 Description: Initializing game
 
 java.lang.NullPointerException: Initializing game
-	at tk.diamondbuildz.mod.character.EventSubscriber.lambda$onRegisterItemsEvent$0(EventSubscriber.java:143)
+	at tk.diamondbuildz.mod.character.EventSubscriber.lambda$onRegisterItemsEvent$0(EventSubscriber.java:152)
 	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
 	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
-	at tk.diamondbuildz.mod.character.EventSubscriber.onRegisterItemsEvent(EventSubscriber.java:142)
-	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_5_EventSubscriber_onRegisterItemsEvent_Register.invoke(.dynamic)
+	at tk.diamondbuildz.mod.character.EventSubscriber.onRegisterItemsEvent(EventSubscriber.java:151)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_6_EventSubscriber_onRegisterItemsEvent_Register.invoke(.dynamic)
 	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
 	at net.minecraftforge.fml.common.eventhandler.EventBus$1.invoke(EventBus.java:144)
 	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182)
@@ -142,11 +142,11 @@ A detailed walkthrough of the error, its code path and all known details is as f
 -- Head --
 Thread: Client thread
 Stacktrace:
-	at tk.diamondbuildz.mod.character.EventSubscriber.lambda$onRegisterItemsEvent$0(EventSubscriber.java:143)
+	at tk.diamondbuildz.mod.character.EventSubscriber.lambda$onRegisterItemsEvent$0(EventSubscriber.java:152)
 	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
 	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
-	at tk.diamondbuildz.mod.character.EventSubscriber.onRegisterItemsEvent(EventSubscriber.java:142)
-	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_5_EventSubscriber_onRegisterItemsEvent_Register.invoke(.dynamic)
+	at tk.diamondbuildz.mod.character.EventSubscriber.onRegisterItemsEvent(EventSubscriber.java:151)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_6_EventSubscriber_onRegisterItemsEvent_Register.invoke(.dynamic)
 	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
 	at net.minecraftforge.fml.common.eventhandler.EventBus$1.invoke(EventBus.java:144)
 	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182)
@@ -179,7 +179,7 @@ Details:
 	Operating System: Windows 10 (amd64) version 10.0
 	Java Version: 1.8.0_202, Oracle Corporation
 	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
-	Memory: 190880392 bytes (182 MB) / 553648128 bytes (528 MB) up to 3806855168 bytes (3630 MB)
+	Memory: 635995664 bytes (606 MB) / 890241024 bytes (849 MB) up to 3806855168 bytes (3630 MB)
 	JVM Flags: 0 total; 
 	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
 	FML: MCP 9.42 Powered by Forge 14.23.5.2768 5 mods loaded, 5 mods active
@@ -211,4 +211,4 @@ VBOs are available because OpenGL 1.5 is supported.
 	Current Language: English (US)
 	Profiler Position: N/A (disabled)
 	CPU: 4x Intel(R) Core(TM) i5-4590 CPU @ 3.30GHz
-[07:00:09] [main/INFO] [STDOUT]: [net.minecraft.init.Bootstrap:printToSYSOUT:629]: #@!@# Game crashed! Crash report saved to: #@!@# I:\Tima-2\Modding\IntelliJ\1.12.2\CharacterMod\run\.\crash-reports\crash-2019-04-05_07.00.09-client.txt
+[21:04:29] [main/INFO] [STDOUT]: [net.minecraft.init.Bootstrap:printToSYSOUT:629]: #@!@# Game crashed! Crash report saved to: #@!@# I:\Tima-2\Modding\IntelliJ\1.12.2\CharacterMod\run\.\crash-reports\crash-2019-04-06_21.04.29-client.txt
