@@ -35,22 +35,6 @@ public final class ClientEventSubscriber {
 
     @SubscribeEvent
     public static void onRegisterModelsEvent(@Nonnull final ModelRegistryEvent event) {
-
-        /*
-        registerTileEntitySpecialRenderers();
-        LOGGER.debug("Registered tile entity special renderers");
-
-        registerEntityRenderers();
-        LOGGER.debug("Registered entity renderers");
-        */
-
-        // Registration can be automated like this
-        // But when you're learning its better to manually register your objects
-        /*
-		ForgeRegistries.BLOCKS.getValuesCollection().stream()
-				.filter(block -> block.getRegistryName().getNamespace().equals(MOD_ID))
-				.forEach(ClientEventSubscriber::registerItemBlockModel);
-		*/
         registerItemBlockModel(ModBlocks.A_CONCRETE_BLACK);
         registerItemBlockModel(ModBlocks.A_CONCRETE_WHITE);
 
@@ -104,22 +88,12 @@ public final class ClientEventSubscriber {
         registerItemModel(ModItems.GLASS_SHARD_WHITE);
         registerItemModel(ModItems.GLASS_SHARD_YELLOW);
 
+        //HERE-- The DiamondGlassCutter/Iron
         registerItemModel(ModItems.DIAMOND_GLASS_CUTTER);
         registerItemModel(ModItems.IRON_GLASS_CUTTER);
 
         LOGGER.debug("Registered models");
-
     }
-
-    /*
-    private static void registerTileEntitySpecialRenderers() {
-        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityExampleTileEntity.class, new RenderExampleTileEntity());
-    }
-
-    private static void registerEntityRenderers() {
-		RenderingRegistry.registerEntityRenderingHandler(Entity___.class, renderManager -> new Entity___Renderer(renderManager));
-    }
-    */
 
     private static void registerItemModel(@Nonnull final Item item) {
         Preconditions.checkNotNull(item, "Item cannot be null!");

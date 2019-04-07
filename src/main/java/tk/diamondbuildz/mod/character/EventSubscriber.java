@@ -10,13 +10,11 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.registries.IForgeRegistry;
 import net.minecraftforge.registries.IForgeRegistryEntry;
-import tk.diamondbuildz.mod.character.blocks.a.glass.*;
 import tk.diamondbuildz.mod.character.blocks.blockbases.a.BlockBaseConcreteA;
 import tk.diamondbuildz.mod.character.init.ModBlocks;
 import tk.diamondbuildz.mod.character.items.ItemBase;
-import tk.diamondbuildz.mod.character.items.ToolGlassCutter;
+import tk.diamondbuildz.mod.character.items.ItemGlassCutter;
 import tk.diamondbuildz.mod.character.util.ModUtil;
-import tk.diamondbuildz.mod.character.util.Reference;
 
 import javax.annotation.Nonnull;
 import java.util.Arrays;
@@ -41,8 +39,10 @@ public final class EventSubscriber {
     @SubscribeEvent
     public static void onRegisterBlocksEvent(@Nonnull final RegistryEvent.Register<Block> event) {
         final IForgeRegistry<Block> registry = event.getRegistry();
-        setup(new BlockBaseConcreteA(), "a_concrete_black");
-        setup(new BlockBaseConcreteA(), "a_concrete_white");
+        event.getRegistry().registerAll(
+                setup(new BlockBaseConcreteA(), "a_concrete_black"),
+                setup(new BlockBaseConcreteA(), "a_concrete_white")
+        );
 
         /*
         registry.register(new BlockBaseConcreteA("a_concrete_black"));
@@ -65,8 +65,7 @@ public final class EventSubscriber {
         registry.register(new AGlassSilver("a_glass_red"));
         registry.register(new AGlassWhite("a_glass_silver"));
         registry.register(new AGlassYellow("a_glass_yellow"));
-        */
-        /*
+
         registry.register(new BlockBaseConcreteB("b_concrete_black"));
         registry.register(new BlockBaseConcreteB("b_concrete_blue"));
         registry.register(new BlockBaseConcreteB("b_concrete_brown"));
@@ -81,28 +80,7 @@ public final class EventSubscriber {
         */
 
         Main.CHARACTER_MOD_LOG.debug("Registered blocks");
-
-        //registerTileEntities();
-
-        //Main.CHARACTER_MOD_LOG.debug("Registered tile entities");
-
     }
-
-    /*
-    private static void registerTileEntities() {
-        registerTileEntity(TileEntityExampleTileEntity.class, "example_tile_entity");
-    }
-
-    private static void registerTileEntity(@Nonnull final Class<? extends TileEntity> clazz, String name) {
-        try {
-            GameRegistry.registerTileEntity(clazz, new ResourceLocation(Reference.MOD_ID, name));
-        } catch (final Exception exception) {
-            CrashReport crashReport = new CrashReport("Error registering Tile Entity " + clazz.getSimpleName(), exception);
-            crashReport.makeCategory("Registering Tile Entity");
-            throw new ReportedException(crashReport);
-        }
-    }
-    */
 
     // Register Item Blocks/Items
     @SubscribeEvent
@@ -160,23 +138,28 @@ public final class EventSubscriber {
         });
 
         // Items
-        setup(new ItemBase(), "glass_shard_black");
-        setup(new ItemBase(), "glass_shard_blue");
-        setup(new ItemBase(), "glass_shard_brown");
-        setup(new ItemBase(), "glass_shard_clear");
-        setup(new ItemBase(), "glass_shard_cyan");
-        setup(new ItemBase(), "glass_shard_gray");
-        setup(new ItemBase(), "glass_shard_green");
-        setup(new ItemBase(), "glass_shard_light_blue");
-        setup(new ItemBase(), "glass_shard_lime");
-        setup(new ItemBase(), "glass_shard_magenta");
-        setup(new ItemBase(), "glass_shard_orange");
-        setup(new ItemBase(), "glass_shard_pink");
-        setup(new ItemBase(), "glass_shard_purple");
-        setup(new ItemBase(), "glass_shard_red");
-        setup(new ItemBase(), "glass_shard_silver");
-        setup(new ItemBase(), "glass_shard_white");
-        setup(new ItemBase(), "glass_shard_yellow");
+        event.getRegistry().registerAll(
+                setup(new ItemBase(), "glass_shard_black"),
+                setup(new ItemBase(), "glass_shard_blue"),
+                setup(new ItemBase(), "glass_shard_brown"),
+                setup(new ItemBase(), "glass_shard_clear"),
+                setup(new ItemBase(), "glass_shard_cyan"),
+                setup(new ItemBase(), "glass_shard_gray"),
+                setup(new ItemBase(), "glass_shard_green"),
+                setup(new ItemBase(), "glass_shard_light_blue"),
+                setup(new ItemBase(), "glass_shard_lime"),
+                setup(new ItemBase(), "glass_shard_magenta"),
+                setup(new ItemBase(), "glass_shard_orange"),
+                setup(new ItemBase(), "glass_shard_pink"),
+                setup(new ItemBase(), "glass_shard_purple"),
+                setup(new ItemBase(), "glass_shard_red"),
+                setup(new ItemBase(), "glass_shard_silver"),
+                setup(new ItemBase(), "glass_shard_white"),
+                setup(new ItemBase(), "glass_shard_yellow"),
+
+                setup(new ItemGlassCutter(Item.ToolMaterial.DIAMOND), "diamond_glass_cutter"),
+                setup(new ItemGlassCutter(Item.ToolMaterial.IRON), "iron_glass_cutter")
+        );
         /*
         registry.register(new ItemBase("glass_shard_black"));
         registry.register(new ItemBase("glass_shard_blue"));
@@ -219,30 +202,4 @@ public final class EventSubscriber {
         }
         return entry;
     }
-
-    /*
-    // Register Entities
-    @SubscribeEvent
-    public static void onRegisterEntitiesEvent(@Nonnull final RegistryEvent.Register<EntityEntry> event) {
-        final IForgeRegistry<EntityEntry> registry = event.getRegistry();
-
-        {
-			final Class clazz = Entity____.class;
-			final ResourceLocation registryName = new ResourceLocation(MOD_ID, ModUtil.getRegistryNameForClass(clazz, "Entity"));
-			registry.register(
-					EntityEntryBuilder.create()
-							.entity(clazz)
-							.id(registryName, entityId++)
-							.name(registryName.getPath())
-							.tracker(range, updateFrequency, sendVelocityUpdates)
-							.egg(primaryColor, secondaryColor)
-							.build()
-			);
-        }
-
-        Main.CHARACTER_MOD_LOG.debug("Registered entities");
-
-    }
-    */
-
 }
