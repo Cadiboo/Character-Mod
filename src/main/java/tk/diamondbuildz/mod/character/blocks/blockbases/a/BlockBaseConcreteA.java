@@ -15,6 +15,7 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+import tk.diamondbuildz.mod.character.util.ModUtil;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
@@ -30,8 +31,8 @@ public class BlockBaseConcreteA extends Block {
         super(Material.ROCK);
         this.setSoundType(SoundType.STONE);
         this.setHardness(0.3F);
-        this.setSoundType(SoundType.STONE);
-        this.setDefaultState(blockState.getBaseState().withProperty(FACING, EnumFacing.SOUTH));
+        this.setDefaultState(blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
+        ModUtil.setCreativeTab(this);
     }
     @Override
     public boolean isFullCube(IBlockState state) { return false; }
@@ -42,21 +43,17 @@ public class BlockBaseConcreteA extends Block {
     @Override
     public IBlockState getActualState(IBlockState state, IBlockAccess worldIn, BlockPos pos) { return state; }
     @Override
-    public BlockRenderLayer getRenderLayer() {
-        return BlockRenderLayer.TRANSLUCENT;
-    }
+    public BlockRenderLayer getRenderLayer() { return BlockRenderLayer.TRANSLUCENT; }
     @Override
-    protected BlockStateContainer createBlockState()
-    {
-        return new BlockStateContainer(this, FACING);
-    }
+    protected BlockStateContainer createBlockState() { return new BlockStateContainer(this, FACING); }
 
     @Override
     @Nonnull
     public IBlockState getStateForPlacement(@Nullable World world, @Nullable BlockPos pos, @Nullable EnumFacing facing, float hitX, float hitY, float hitZ, int meta, @Nullable EntityLivingBase placer, EnumHand hand) {
         assert placer != null;
-        return this.getDefaultState().withProperty(FACING, placer.getHorizontalFacing().getOpposite());
+        return this.getDefaultState().withProperty(FACING, placer.getHorizontalFacing());
     }
+
     @Override
     public IBlockState getStateFromMeta(int meta) {
         EnumFacing facing = EnumFacing.byHorizontalIndex(meta);
@@ -67,13 +64,6 @@ public class BlockBaseConcreteA extends Block {
     public int getMetaFromState(IBlockState state) {
         EnumFacing facing = state.getValue(FACING);
         return facing.getHorizontalIndex();
-    }
-
-    @Override
-    public IBlockState getStateForPlacement(World worldIn, BlockPos pos, EnumFacing blockFaceClickedOn, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer) {
-        EnumFacing enumfacing = (placer == null) ? EnumFacing.NORTH : placer.getHorizontalFacing().getOpposite();
-
-        return this.getDefaultState().withProperty(FACING, enumfacing);
     }
 
     @Override

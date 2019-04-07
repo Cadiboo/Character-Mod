@@ -1,8 +1,8 @@
 package tk.diamondbuildz.mod.character.init;
 
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemTool;
 import net.minecraftforge.fml.common.registry.GameRegistry;
-import tk.diamondbuildz.mod.character.items.ItemGlassCutter;
 import tk.diamondbuildz.mod.character.util.Reference;
 
 @GameRegistry.ObjectHolder(Reference.MOD_ID)
@@ -28,6 +28,6 @@ public class ModItems {
     public static final Item GLASS_SHARD_YELLOW = null;
 
     // Tools
-    public static ItemGlassCutter DIAMOND_GLASS_CUTTER = null;
-    public static ItemGlassCutter IRON_GLASS_CUTTER = null;
+    public static ItemTool DIAMOND_GLASS_CUTTER = null;
+    public static ItemTool IRON_GLASS_CUTTER = null;
 }

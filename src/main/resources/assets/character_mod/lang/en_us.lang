@@ -1,40 +1,48 @@
-itemGroup.tabCharacterMod=Character Mod
+#Creative Tabs
+itemGroup.character_mod=Character Mod
 
-item.glass_shard_clear.name=Glass Shard
-item.glass_shard_black.name=Black Glass Shard
-item.glass_shard_blue.name=Blue Glass Shard
-item.glass_shard_brown.name=Brown Glass Shard
-item.glass_shard_cyan.name=Cyan Glass Shard
-item.glass_shard_gray.name=Gray Glass Shard
-item.glass_shard_green.name=Green Glass Shard
-item.glass_shard_light_blue.name=Light Blue Glass Shard
-item.glass_shard_lime.name=Lime Glass Shard
-item.glass_shard_magenta.name=Magenta Glass Shard
-item.glass_shard_orange.name=Orange Glass Shard
-item.glass_shard_pink.name=Pink Glass Shard
-item.glass_shard_purple.name=Purple Glass Shard
-item.glass_shard_red.name=Red Glass Shard
-item.glass_shard_silver.name=Silver Glass Shard
-item.glass_shard_white.name=White Glass Shard
-item.glass_shard_yellow.name=Yellow Glass Shard
+#Items
+item.character_mod.glass_shard_clear.name=Glass Shard
+item.character_mod.glass_shard_black.name=Black Glass Shard
+item.character_mod.glass_shard_blue.name=Blue Glass Shard
+item.character_mod.glass_shard_brown.name=Brown Glass Shard
+item.character_mod.glass_shard_cyan.name=Cyan Glass Shard
+item.character_mod.glass_shard_gray.name=Gray Glass Shard
+item.character_mod.glass_shard_green.name=Green Glass Shard
+item.character_mod.glass_shard_light_blue.name=Light Blue Glass Shard
+item.character_mod.glass_shard_lime.name=Lime Glass Shard
+item.character_mod.glass_shard_magenta.name=Magenta Glass Shard
+item.character_mod.glass_shard_orange.name=Orange Glass Shard
+item.character_mod.glass_shard_pink.name=Pink Glass Shard
+item.character_mod.glass_shard_purple.name=Purple Glass Shard
+item.character_mod.glass_shard_red.name=Red Glass Shard
+item.character_mod.glass_shard_silver.name=Silver Glass Shard
+item.character_mod.glass_shard_white.name=White Glass Shard
+item.character_mod.glass_shard_yellow.name=Yellow Glass Shard
 
-item.diamond_glass_cutter.name=Diamond Glass Cutter
-item.iron_glass_cutter.name=Iron Glass Cutter
+#Item Tools
+item.character_mod.diamond_glass_cutter.name=Diamond Glass Cutter
+item.character_mod.iron_glass_cutter.name=Iron Glass Cutter
 
-tile.a_glass_clear.name=Glass A
-tile.a_glass_black.name=Black Glass A
-tile.a_glass_blue.name=Blue Glass A
-tile.a_glass_brown.name=Brown Glass A
-tile.a_glass_cyan.name=Cyan Glass A
-tile.a_glass_green.name=Green Glass A
-tile.a_glass_gray.name=Gray Glass A
-tile.a_glass_light_blue.name=Light Blue Glass A
-tile.a_glass_lime.name=Lime Glass A
-tile.a_glass_magenta.name=Magenta Glass A
-tile.a_glass_orange.name=Orange Glass A
-tile.a_glass_pink.name=Pink Glass A
-tile.a_glass_purple.name=Purple Glass A
-tile.a_glass_red.name=Red Glass A
-tile.a_glass_silver.name=Silver Glass A
-tile.a_glass_white.name=White Glass A
-tile.a_glass_yellow.name=Yellow Glass A
+#Concrete A
+tile.character_mod.a_concrete_black.name=Black Concrete A
+tile.character_mod.a_concrete_white.name=White Concrete A
+
+#Glass A
+tile.character_mod.a_glass_clear.name=Glass A
+tile.character_mod.a_glass_black.name=Black Glass A
+tile.character_mod.a_glass_blue.name=Blue Glass A
+tile.character_mod.a_glass_brown.name=Brown Glass A
+tile.character_mod.a_glass_cyan.name=Cyan Glass A
+tile.character_mod.a_glass_green.name=Green Glass A
+tile.character_mod.a_glass_gray.name=Gray Glass A
+tile.character_mod.a_glass_light_blue.name=Light Blue Glass A
+tile.character_mod.a_glass_lime.name=Lime Glass A
+tile.character_mod.a_glass_magenta.name=Magenta Glass A
+tile.character_mod.a_glass_orange.name=Orange Glass A
+tile.character_mod.a_glass_pink.name=Pink Glass A
+tile.character_mod.a_glass_purple.name=Purple Glass A
+tile.character_mod.a_glass_red.name=Red Glass A
+tile.character_mod.a_glass_silver.name=Silver Glass A
+tile.character_mod.a_glass_white.name=White Glass A
+tile.character_mod.a_glass_yellow.name=Yellow Glass A

@@ -38,7 +38,7 @@ public final class ClientEventSubscriber {
         registerItemBlockModel(ModBlocks.A_CONCRETE_BLACK);
         registerItemBlockModel(ModBlocks.A_CONCRETE_WHITE);
 
-        /*
+
         registerItemBlockModel(ModBlocks.A_GLASS_BLACK);
         registerItemBlockModel(ModBlocks.A_GLASS_BLUE);
         registerItemBlockModel(ModBlocks.A_GLASS_BROWN);
@@ -56,6 +56,7 @@ public final class ClientEventSubscriber {
         registerItemBlockModel(ModBlocks.A_GLASS_SILVER);
         registerItemBlockModel(ModBlocks.A_GLASS_WHITE);
         registerItemBlockModel(ModBlocks.A_GLASS_YELLOW);
+
         /*
         registerItemBlockModel(ModBlocks.B_CONCRETE_BLACK);
         registerItemBlockModel(ModBlocks.B_CONCRETE_BLUE);
@@ -69,7 +70,7 @@ public final class ClientEventSubscriber {
         registerItemBlockModel(ModBlocks.B_CONCRETE_ORANGE);
         registerItemBlockModel(ModBlocks.B_CONCRETE_PINK);
         */
-
+        // Items
         registerItemModel(ModItems.GLASS_SHARD_BLACK);
         registerItemModel(ModItems.GLASS_SHARD_BLUE);
         registerItemModel(ModItems.GLASS_SHARD_BROWN);
@@ -88,9 +89,9 @@ public final class ClientEventSubscriber {
         registerItemModel(ModItems.GLASS_SHARD_WHITE);
         registerItemModel(ModItems.GLASS_SHARD_YELLOW);
 
-        //HERE-- The DiamondGlassCutter/Iron
-        registerItemModel(ModItems.DIAMOND_GLASS_CUTTER);
-        registerItemModel(ModItems.IRON_GLASS_CUTTER);
+        // Item Tools
+        //registerItemModel(ModItems.DIAMOND_GLASS_CUTTER);
+        //registerItemModel(ModItems.IRON_GLASS_CUTTER);
 
         LOGGER.debug("Registered models");
     }
@@ -108,14 +109,4 @@ public final class ClientEventSubscriber {
         Preconditions.checkNotNull(registryName, "Block Registry Name cannot be null!");
         ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(block), 0, new ModelResourceLocation(block.getRegistryName(), DEFAULT_VARIANT));
     }
-
-    /*
-    @SubscribeEvent
-    public static void onTextureStitchEvent(@Nonnull final TextureStitchEvent event) {
-        // register texture for example tile entity
-        final ResourceLocation registryName = ModBlocks.EXAMPLE_TILE_ENTITY.getRegistryName();
-        event.getMap().registerSprite(new ResourceLocation(registryName.getNamespace(), "block/" + registryName.getPath()));
-    }
-    */
-
 }

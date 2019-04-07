@@ -8,7 +8,6 @@ import tk.diamondbuildz.mod.character.blocks.blockbases.a.BlockBaseGlassA;
 import tk.diamondbuildz.mod.character.init.ModBlocks;
 import tk.diamondbuildz.mod.character.init.ModItems;
 
-import javax.annotation.Nonnull;
 import java.util.Random;
 
 public class AGlassSilver extends BlockBaseGlassA {
@@ -23,7 +22,7 @@ public class AGlassSilver extends BlockBaseGlassA {
             entityPlayer = harvesters.get();
             Item MainHandHeldItem = entityPlayer.getHeldItemMainhand().getItem();
             if (MainHandHeldItem.equals(ModItems.DIAMOND_GLASS_CUTTER) || MainHandHeldItem.equals(ModItems.IRON_GLASS_CUTTER)) {
-                this.item = Item.getItemFromBlock(ModBlocks.A_GLASS_RED);
+                this.item = Item.getItemFromBlock(ModBlocks.A_GLASS_SILVER);
             }
             else {
                 this.item = ModItems.GLASS_SHARD_SILVER;
@@ -33,7 +32,7 @@ public class AGlassSilver extends BlockBaseGlassA {
     }
     @Override
     protected ItemStack getSilkTouchDrop(IBlockState state) {
-        return new ItemStack(ModBlocks.A_GLASS_RED);
+        return new ItemStack(ModBlocks.A_GLASS_SILVER);
     }
 
 }

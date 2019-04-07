@@ -8,7 +8,6 @@ import tk.diamondbuildz.mod.character.blocks.blockbases.a.BlockBaseGlassA;
 import tk.diamondbuildz.mod.character.init.ModBlocks;
 import tk.diamondbuildz.mod.character.init.ModItems;
 
-import javax.annotation.Nonnull;
 import java.util.Random;
 
 public class AGlassRed extends BlockBaseGlassA {

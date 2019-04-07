@@ -10,10 +10,10 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.registries.IForgeRegistry;
 import net.minecraftforge.registries.IForgeRegistryEntry;
+import tk.diamondbuildz.mod.character.blocks.a.glass.*;
 import tk.diamondbuildz.mod.character.blocks.blockbases.a.BlockBaseConcreteA;
 import tk.diamondbuildz.mod.character.init.ModBlocks;
 import tk.diamondbuildz.mod.character.items.ItemBase;
-import tk.diamondbuildz.mod.character.items.ItemGlassCutter;
 import tk.diamondbuildz.mod.character.util.ModUtil;
 
 import javax.annotation.Nonnull;
@@ -32,40 +32,33 @@ import static tk.diamondbuildz.mod.character.util.Reference.MOD_ID;
 @Mod.EventBusSubscriber(modid = MOD_ID)
 public final class EventSubscriber {
 
-    // For Entities
-    private static int entityId = 0;
-
     // Register Blocks
     @SubscribeEvent
     public static void onRegisterBlocksEvent(@Nonnull final RegistryEvent.Register<Block> event) {
-        final IForgeRegistry<Block> registry = event.getRegistry();
         event.getRegistry().registerAll(
                 setup(new BlockBaseConcreteA(), "a_concrete_black"),
-                setup(new BlockBaseConcreteA(), "a_concrete_white")
+                setup(new BlockBaseConcreteA(), "a_concrete_white"),
+
+                setup(new AGlassBlack(), "a_glass_black"),
+                setup(new AGlassBlue(), "a_glass_blue"),
+                setup(new AGlassBrown(), "a_glass_brown"),
+                setup(new AGlassClear(), "a_glass_clear"),
+                setup(new AGlassCyan(), "a_glass_cyan"),
+                setup(new AGlassGray(), "a_glass_gray"),
+                setup(new AGlassGreen(), "a_glass_green"),
+                setup(new AGlassLightBlue(), "a_glass_light_blue"),
+                setup(new AGlassLime(), "a_glass_lime"),
+                setup(new AGlassMagenta(), "a_glass_magenta"),
+                setup(new AGlassOrange(), "a_glass_orange"),
+                setup(new AGlassPink(), "a_glass_pink"),
+                setup(new AGlassPurple(), "a_glass_purple"),
+                setup(new AGlassRed(), "a_glass_red"),
+                setup(new AGlassSilver(), "a_glass_silver"),
+                setup(new AGlassWhite(), "a_glass_white"),
+                setup(new AGlassYellow(), "a_glass_yellow")
         );
 
         /*
-        registry.register(new BlockBaseConcreteA("a_concrete_black"));
-        registry.register(new BlockBaseConcreteA("a_concrete_white"));
-
-        registry.register(new AGlassBlack("a_glass_black"));
-        registry.register(new AGlassBlue("a_glass_blue"));
-        registry.register(new AGlassBrown("a_glass_brown"));
-        registry.register(new AGlassClear("a_glass_clear"));
-        registry.register(new AGlassCyan("a_glass_cyan"));
-        registry.register(new AGlassGray("a_glass_gray"));
-        registry.register(new AGlassGreen("a_glass_green"));
-        registry.register(new AGlassLightBlue("a_glass_blue"));
-        registry.register(new AGlassLime("a_glass_lime"));
-        registry.register(new AGlassOrange("a_glass_orange"));
-        registry.register(new AGlassMagenta("a_glass_magenta"));
-        registry.register(new AGlassPink("a_glass_orange"));
-        registry.register(new AGlassPurple("a_glass_pink"));
-        registry.register(new AGlassRed("a_glass_purple"));
-        registry.register(new AGlassSilver("a_glass_red"));
-        registry.register(new AGlassWhite("a_glass_silver"));
-        registry.register(new AGlassYellow("a_glass_yellow"));
-
         registry.register(new BlockBaseConcreteB("b_concrete_black"));
         registry.register(new BlockBaseConcreteB("b_concrete_blue"));
         registry.register(new BlockBaseConcreteB("b_concrete_brown"));
@@ -93,7 +86,6 @@ public final class EventSubscriber {
                 ModBlocks.A_CONCRETE_BLACK,
                 ModBlocks.A_CONCRETE_WHITE,
 
-                /*
                 ModBlocks.A_GLASS_BLACK,
                 ModBlocks.A_GLASS_BLUE,
                 ModBlocks.A_GLASS_BROWN,
@@ -111,7 +103,6 @@ public final class EventSubscriber {
                 ModBlocks.A_GLASS_SILVER,
                 ModBlocks.A_GLASS_WHITE,
                 ModBlocks.A_GLASS_YELLOW,
-                */
                 /*
                 ModBlocks.B_CONCRETE_BLACK,
                 ModBlocks.B_CONCRETE_BLUE,
@@ -155,37 +146,15 @@ public final class EventSubscriber {
                 setup(new ItemBase(), "glass_shard_red"),
                 setup(new ItemBase(), "glass_shard_silver"),
                 setup(new ItemBase(), "glass_shard_white"),
-                setup(new ItemBase(), "glass_shard_yellow"),
+                setup(new ItemBase(), "glass_shard_yellow")
 
-                setup(new ItemGlassCutter(Item.ToolMaterial.DIAMOND), "diamond_glass_cutter"),
-                setup(new ItemGlassCutter(Item.ToolMaterial.IRON), "iron_glass_cutter")
+                //setup(new ItemGlassCutter(Item.ToolMaterial.DIAMOND), "diamond_glass_cutter"),
+                //setup(new ItemGlassCutter(Item.ToolMaterial.IRON), "iron_glass_cutter")
         );
-        /*
-        registry.register(new ItemBase("glass_shard_black"));
-        registry.register(new ItemBase("glass_shard_blue"));
-        registry.register(new ItemBase("glass_shard_brown"));
-        registry.register(new ItemBase("glass_shard_clear"));
-        registry.register(new ItemBase("glass_shard_cyan"));
-        registry.register(new ItemBase("glass_shard_gray"));
-        registry.register(new ItemBase("glass_shard_green"));
-        registry.register(new ItemBase("glass_shard_light_blue"));
-        registry.register(new ItemBase("glass_shard_lime"));
-        registry.register(new ItemBase("glass_shard_magenta"));
-        registry.register(new ItemBase("glass_shard_orange"));
-        registry.register(new ItemBase("glass_shard_pink"));
-        registry.register(new ItemBase("glass_shard_purple"));
-        registry.register(new ItemBase("glass_shard_red"));
-        registry.register(new ItemBase("glass_shard_silver"));
-        registry.register(new ItemBase("glass_shard_white"));
-        registry.register(new ItemBase("glass_shard_yellow"));
-
-        registry.register(new ToolGlassCutter("diamond_glass_cutter", Item.ToolMaterial.DIAMOND));
-        registry.register(new ToolGlassCutter("iron_glass_cutter", Item.ToolMaterial.IRON));
-        */
 
         Main.CHARACTER_MOD_LOG.debug("Registered items");
     }
-    //setup method
+    // Setup Method
     @Nonnull
     public static <T extends IForgeRegistryEntry> T setup(@Nonnull final T entry, @Nonnull final String name) {
         return setup(entry, new ResourceLocation(MOD_ID, name));

@@ -3,7 +3,6 @@ package tk.diamondbuildz.mod.character.blocks.blockbases.a;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
-import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyDirection;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
@@ -12,6 +11,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.EnumFacing;
+import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
@@ -21,6 +21,7 @@ import tk.diamondbuildz.mod.character.init.ModItems;
 import tk.diamondbuildz.mod.character.util.ModUtil;
 
 import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
 import java.util.Random;
 
 public class BlockBaseGlassA extends Block {
@@ -35,7 +36,8 @@ public class BlockBaseGlassA extends Block {
         super(Material.GLASS);
         this.setHardness(0.3F);
         this.setSoundType(SoundType.GLASS);
-        this.setDefaultState(blockState.getBaseState().withProperty(FACING, EnumFacing.SOUTH));
+        this.setDefaultState(blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
+        ModUtil.setCreativeTab(this);
     }
 
     @Override
@@ -53,9 +55,8 @@ public class BlockBaseGlassA extends Block {
         return BlockRenderLayer.TRANSLUCENT;
     }
     @Override
-    protected BlockStateContainer createBlockState()
-    {
-        return new BlockStateContainer(this, new IProperty[] {FACING});
+    protected BlockStateContainer createBlockState() {
+        return new BlockStateContainer(this, FACING);
     }
 
     @Override
@@ -73,10 +74,10 @@ public class BlockBaseGlassA extends Block {
     }
 
     @Override
-    public IBlockState getStateForPlacement(World worldIn, BlockPos pos, EnumFacing blockFaceClickedOn, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer) {
-        EnumFacing enumfacing = (placer == null) ? EnumFacing.NORTH : placer.getHorizontalFacing().getOpposite();
-
-        return this.getDefaultState().withProperty(FACING, enumfacing);
+    @Nonnull
+    public IBlockState getStateForPlacement(@Nullable World world, @Nullable BlockPos pos, @Nullable EnumFacing facing, float hitX, float hitY, float hitZ, int meta, @Nullable EntityLivingBase placer, EnumHand hand) {
+        assert placer != null;
+        return this.getDefaultState().withProperty(FACING, placer.getHorizontalFacing());
     }
 
     @Override
@@ -88,7 +89,7 @@ public class BlockBaseGlassA extends Block {
                 this.quantity = 1;
             }
             else {
-                this.quantity = Main.randomNumber(0, 4);
+                this.quantity = Main.randomNumber(0, 3);
             }
         }
         return this.quantity;

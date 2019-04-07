@@ -21,7 +21,7 @@ import static tk.diamondbuildz.mod.character.util.Reference.MOD_ID;
 
 public final class ModCreativeTabs {
 
-    public static final String TAB_ICON_ITEM_REGISTRY_NAME = MOD_ID + ":" + "a_glass_black";
+    public static final String TAB_ICON_ITEM_REGISTRY_NAME = MOD_ID + ":" + "glass_shard_black";
 
     @ItemStackHolder(value = TAB_ICON_ITEM_REGISTRY_NAME)
     public static final ItemStack TAB_ICON_ITEMSTACK = null;
@@ -29,7 +29,7 @@ public final class ModCreativeTabs {
     /**
      * instantiate creative tabs
      */
-    public static final CustomCreativeTab CREATIVE_TAB = new CustomCreativeTab(MOD_ID, true) {
+    public static final CustomCreativeTab CREATIVE_TAB = new CustomCreativeTab("character_mod", true) {
         @Override
         public ItemStack createIcon() {
             return TAB_ICON_ITEMSTACK;
