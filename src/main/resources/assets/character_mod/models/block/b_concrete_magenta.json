@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "1.12.2 Assets:blocks/concrete_magenta",
-		"particle": "1.12.2 Assets:blocks/concrete_magenta"
+		"0": "blocks/concrete_magenta",
+		"particle": "blocks/concrete_magenta"
 	},
 	"elements": [
 		{

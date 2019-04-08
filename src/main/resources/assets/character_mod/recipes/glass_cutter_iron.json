@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "  i",
+    " s ",
+    "s  "
+  ],
+  "key":
+  {
+    "i":
+    {
+      "type": "forge:ore_dict",
+      "ore": "ingotIron"
+    },
+    "s":
+    {
+      "item": "minecraft:stick"
+    }
+  },
+  "result":
+  {
+    "item": "character_mod:glass_cutter_iron"
+  }
+}

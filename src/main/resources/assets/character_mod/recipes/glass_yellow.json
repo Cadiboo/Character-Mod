@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "character_mod:glass_shard_yellow"
+    },
+    {
+      "item": "character_mod:glass_shard_yellow"
+    },
+    {
+      "item": "character_mod:glass_shard_yellow"
+    },
+    {
+      "item": "character_mod:glass_shard_yellow"
+    }
+  ],
+  "result": {
+    "item": "minecraft:stained_glass",
+    "data": 4
+  }
+}

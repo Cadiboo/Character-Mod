@@ -4,7 +4,7 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import tk.diamondbuildz.mod.character.blocks.blockbases.a.BlockBaseGlassA;
+import tk.diamondbuildz.mod.character.blockbases.glass.BlockBaseGlassA;
 import tk.diamondbuildz.mod.character.init.ModBlocks;
 import tk.diamondbuildz.mod.character.init.ModItems;
 
@@ -21,7 +21,7 @@ public class AGlassMagenta extends BlockBaseGlassA {
         if (harvesters.get() != null) {
             entityPlayer = harvesters.get();
             Item MainHandHeldItem = entityPlayer.getHeldItemMainhand().getItem();
-            if (MainHandHeldItem.equals(ModItems.DIAMOND_GLASS_CUTTER) || MainHandHeldItem.equals(ModItems.IRON_GLASS_CUTTER)) {
+            if (MainHandHeldItem.equals(ModItems.CUTTER_GLASS_DIAMOND) || MainHandHeldItem.equals(ModItems.CUTTER_GLASS_IRON)) {
                 this.item = Item.getItemFromBlock(ModBlocks.A_GLASS_MAGENTA);
             }
             else {

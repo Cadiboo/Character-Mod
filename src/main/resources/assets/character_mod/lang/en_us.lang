@@ -1,5 +1,5 @@
 #Creative Tabs
-itemGroup.character_mod=Character Mod
+itemGroup.character_mod=Characters
 
 #Items
 item.character_mod.glass_shard_clear.name=Glass Shard
@@ -21,12 +21,26 @@ item.character_mod.glass_shard_white.name=White Glass Shard
 item.character_mod.glass_shard_yellow.name=Yellow Glass Shard
 
 #Item Tools
-item.character_mod.diamond_glass_cutter.name=Diamond Glass Cutter
-item.character_mod.iron_glass_cutter.name=Iron Glass Cutter
+item.character_mod.cutter_glass_diamond.name=Diamond Glass Cutter
+item.character_mod.cutter_glass_iron.name=Iron Glass Cutter
 
 #Concrete A
 tile.character_mod.a_concrete_black.name=Black Concrete A
+tile.character_mod.a_concrete_blue.name=Blue Concrete A
+tile.character_mod.a_concrete_brown.name=Brown Concrete A
+tile.character_mod.a_concrete_cyan.name=Cyan Concrete A
+tile.character_mod.a_concrete_gray.name=Gray Concrete A
+tile.character_mod.a_concrete_green.name=Green Concrete A
+tile.character_mod.a_concrete_light_blue.name=Light Blue Concrete A
+tile.character_mod.a_concrete_lime.name=Lime Concrete A
+tile.character_mod.a_concrete_magenta.name=Magenta Concrete A
+tile.character_mod.a_concrete_orange.name=Orange Concrete A
+tile.character_mod.a_concrete_pink.name=Pink Concrete A
+tile.character_mod.a_concrete_purple.name=Purple Concrete A
+tile.character_mod.a_concrete_red.name=Red Concrete A
+tile.character_mod.a_concrete_silver.name=Silver Concrete A
 tile.character_mod.a_concrete_white.name=White Concrete A
+tile.character_mod.a_concrete_yellow.name=Yellow Concrete A
 
 #Glass A
 tile.character_mod.a_glass_clear.name=Glass A
@@ -46,3 +60,21 @@ tile.character_mod.a_glass_red.name=Red Glass A
 tile.character_mod.a_glass_silver.name=Silver Glass A
 tile.character_mod.a_glass_white.name=White Glass A
 tile.character_mod.a_glass_yellow.name=Yellow Glass A
+
+#Concrete B
+tile.character_mod.b_concrete_black.name=Black Concrete B
+tile.character_mod.b_concrete_blue.name=Blue Concrete B
+tile.character_mod.b_concrete_brown.name=Brown Concrete B
+tile.character_mod.b_concrete_cyan.name=Cyan Concrete B
+tile.character_mod.b_concrete_green.name=Green Concrete B
+tile.character_mod.b_concrete_gray.name=Gray Concrete B
+tile.character_mod.b_concrete_light_blue.name=Light Blue Concrete B
+tile.character_mod.b_concrete_lime.name=Lime Concrete B
+tile.character_mod.b_concrete_magenta.name=Magenta Concrete B
+tile.character_mod.b_concrete_orange.name=Orange Concrete B
+tile.character_mod.b_concrete_pink.name=Pink Concrete B
+tile.character_mod.b_concrete_purple.name=Purple Concrete B
+tile.character_mod.b_concrete_red.name=Red Concrete B
+tile.character_mod.b_concrete_silver.name=Silver Concrete B
+tile.character_mod.b_concrete_white.name=White Concrete B
+tile.character_mod.b_concrete_yellow.name=Yellow Concrete B

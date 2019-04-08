@@ -2,9 +2,16 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "character_mod:glass_shard_clear",
-      "data": 0,
-      "count": 4
+      "item": "character_mod:glass_shard_clear"
+    },
+    {
+      "item": "character_mod:glass_shard_clear"
+    },
+    {
+      "item": "character_mod:glass_shard_clear"
+    },
+    {
+      "item": "character_mod:glass_shard_clear"
     }
   ],
   "result": {

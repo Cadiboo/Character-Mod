@@ -10,10 +10,12 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.registries.IForgeRegistry;
 import net.minecraftforge.registries.IForgeRegistryEntry;
+import tk.diamondbuildz.mod.character.blockbases.concrete.BlockBaseConcreteB;
 import tk.diamondbuildz.mod.character.blocks.a.glass.*;
-import tk.diamondbuildz.mod.character.blocks.blockbases.a.BlockBaseConcreteA;
+import tk.diamondbuildz.mod.character.blockbases.concrete.BlockBaseConcreteA;
 import tk.diamondbuildz.mod.character.init.ModBlocks;
 import tk.diamondbuildz.mod.character.items.ItemBase;
+import tk.diamondbuildz.mod.character.items.ItemGlassCutter;
 import tk.diamondbuildz.mod.character.util.ModUtil;
 
 import javax.annotation.Nonnull;
@@ -37,7 +39,21 @@ public final class EventSubscriber {
     public static void onRegisterBlocksEvent(@Nonnull final RegistryEvent.Register<Block> event) {
         event.getRegistry().registerAll(
                 setup(new BlockBaseConcreteA(), "a_concrete_black"),
+                setup(new BlockBaseConcreteA(), "a_concrete_blue"),
+                setup(new BlockBaseConcreteA(), "a_concrete_brown"),
+                setup(new BlockBaseConcreteA(), "a_concrete_cyan"),
+                setup(new BlockBaseConcreteA(), "a_concrete_gray"),
+                setup(new BlockBaseConcreteA(), "a_concrete_green"),
+                setup(new BlockBaseConcreteA(), "a_concrete_light_blue"),
+                setup(new BlockBaseConcreteA(), "a_concrete_lime"),
+                setup(new BlockBaseConcreteA(), "a_concrete_magenta"),
+                setup(new BlockBaseConcreteA(), "a_concrete_orange"),
+                setup(new BlockBaseConcreteA(), "a_concrete_pink"),
+                setup(new BlockBaseConcreteA(), "a_concrete_purple"),
+                setup(new BlockBaseConcreteA(), "a_concrete_red"),
+                setup(new BlockBaseConcreteA(), "a_concrete_silver"),
                 setup(new BlockBaseConcreteA(), "a_concrete_white"),
+                setup(new BlockBaseConcreteA(), "a_concrete_yellow"),
 
                 setup(new AGlassBlack(), "a_glass_black"),
                 setup(new AGlassBlue(), "a_glass_blue"),
@@ -55,23 +71,25 @@ public final class EventSubscriber {
                 setup(new AGlassRed(), "a_glass_red"),
                 setup(new AGlassSilver(), "a_glass_silver"),
                 setup(new AGlassWhite(), "a_glass_white"),
-                setup(new AGlassYellow(), "a_glass_yellow")
+                setup(new AGlassYellow(), "a_glass_yellow"),
+
+                setup(new BlockBaseConcreteB(), "b_concrete_black"),
+                setup(new BlockBaseConcreteB(), "b_concrete_blue"),
+                setup(new BlockBaseConcreteB(), "b_concrete_brown"),
+                setup(new BlockBaseConcreteB(), "b_concrete_cyan"),
+                setup(new BlockBaseConcreteB(), "b_concrete_gray"),
+                setup(new BlockBaseConcreteB(), "b_concrete_green"),
+                setup(new BlockBaseConcreteB(), "b_concrete_light_blue"),
+                setup(new BlockBaseConcreteB(), "b_concrete_lime"),
+                setup(new BlockBaseConcreteB(), "b_concrete_magenta"),
+                setup(new BlockBaseConcreteB(), "b_concrete_orange"),
+                setup(new BlockBaseConcreteB(), "b_concrete_pink"),
+                setup(new BlockBaseConcreteB(), "b_concrete_purple"),
+                setup(new BlockBaseConcreteB(), "b_concrete_red"),
+                setup(new BlockBaseConcreteB(), "b_concrete_silver"),
+                setup(new BlockBaseConcreteB(), "b_concrete_white"),
+                setup(new BlockBaseConcreteB(), "b_concrete_yellow")
         );
-
-        /*
-        registry.register(new BlockBaseConcreteB("b_concrete_black"));
-        registry.register(new BlockBaseConcreteB("b_concrete_blue"));
-        registry.register(new BlockBaseConcreteB("b_concrete_brown"));
-        registry.register(new BlockBaseConcreteB("b_concrete_cyan"));
-        registry.register(new BlockBaseConcreteB("b_concrete_gray"));
-        registry.register(new BlockBaseConcreteB("b_concrete_green"));
-        registry.register(new BlockBaseConcreteB("b_concrete_light_blue"));
-        registry.register(new BlockBaseConcreteB("b_concrete_lime"));
-        registry.register(new BlockBaseConcreteB("b_concrete_magenta"));
-        registry.register(new BlockBaseConcreteB("b_concrete_orange"));
-        registry.register(new BlockBaseConcreteB("b_concrete_pink"));
-        */
-
         Main.CHARACTER_MOD_LOG.debug("Registered blocks");
     }
 
@@ -84,7 +102,21 @@ public final class EventSubscriber {
         Arrays.stream(new Block[]{
 
                 ModBlocks.A_CONCRETE_BLACK,
+                ModBlocks.A_CONCRETE_BLUE,
+                ModBlocks.A_CONCRETE_BROWN,
+                ModBlocks.A_CONCRETE_CYAN,
+                ModBlocks.A_CONCRETE_GRAY,
+                ModBlocks.A_CONCRETE_GREEN,
+                ModBlocks.A_CONCRETE_LIGHT_BLUE,
+                ModBlocks.A_CONCRETE_LIME,
+                ModBlocks.A_CONCRETE_MAGENTA,
+                ModBlocks.A_CONCRETE_ORANGE,
+                ModBlocks.A_CONCRETE_PINK,
+                ModBlocks.A_CONCRETE_PURPLE,
+                ModBlocks.A_CONCRETE_RED,
+                ModBlocks.A_CONCRETE_SILVER,
                 ModBlocks.A_CONCRETE_WHITE,
+                ModBlocks.A_CONCRETE_YELLOW,
 
                 ModBlocks.A_GLASS_BLACK,
                 ModBlocks.A_GLASS_BLUE,
@@ -103,7 +135,7 @@ public final class EventSubscriber {
                 ModBlocks.A_GLASS_SILVER,
                 ModBlocks.A_GLASS_WHITE,
                 ModBlocks.A_GLASS_YELLOW,
-                /*
+
                 ModBlocks.B_CONCRETE_BLACK,
                 ModBlocks.B_CONCRETE_BLUE,
                 ModBlocks.B_CONCRETE_BROWN,
@@ -115,7 +147,11 @@ public final class EventSubscriber {
                 ModBlocks.B_CONCRETE_MAGENTA,
                 ModBlocks.B_CONCRETE_ORANGE,
                 ModBlocks.B_CONCRETE_PINK,
-                */
+                ModBlocks.B_CONCRETE_PURPLE,
+                ModBlocks.B_CONCRETE_RED,
+                ModBlocks.B_CONCRETE_SILVER,
+                ModBlocks.B_CONCRETE_WHITE,
+                ModBlocks.B_CONCRETE_YELLOW,
 
         }).forEach(block -> {
             Preconditions.checkNotNull(block.getRegistryName(), "Registry name cannot be null!");
@@ -146,12 +182,11 @@ public final class EventSubscriber {
                 setup(new ItemBase(), "glass_shard_red"),
                 setup(new ItemBase(), "glass_shard_silver"),
                 setup(new ItemBase(), "glass_shard_white"),
-                setup(new ItemBase(), "glass_shard_yellow")
+                setup(new ItemBase(), "glass_shard_yellow"),
 
-                //setup(new ItemGlassCutter(Item.ToolMaterial.DIAMOND), "diamond_glass_cutter"),
-                //setup(new ItemGlassCutter(Item.ToolMaterial.IRON), "iron_glass_cutter")
+                setup(new ItemGlassCutter(Item.ToolMaterial.DIAMOND), "cutter_glass_diamond"),
+                setup(new ItemGlassCutter(Item.ToolMaterial.IRON), "cutter_glass_iron")
         );
-
         Main.CHARACTER_MOD_LOG.debug("Registered items");
     }
     // Setup Method

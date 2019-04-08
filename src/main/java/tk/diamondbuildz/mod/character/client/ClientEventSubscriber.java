@@ -36,8 +36,21 @@ public final class ClientEventSubscriber {
     @SubscribeEvent
     public static void onRegisterModelsEvent(@Nonnull final ModelRegistryEvent event) {
         registerItemBlockModel(ModBlocks.A_CONCRETE_BLACK);
+        registerItemBlockModel(ModBlocks.A_CONCRETE_BLUE);
+        registerItemBlockModel(ModBlocks.A_CONCRETE_BROWN);
+        registerItemBlockModel(ModBlocks.A_CONCRETE_CYAN);
+        registerItemBlockModel(ModBlocks.A_CONCRETE_GRAY);
+        registerItemBlockModel(ModBlocks.A_CONCRETE_GREEN);
+        registerItemBlockModel(ModBlocks.A_CONCRETE_LIGHT_BLUE);
+        registerItemBlockModel(ModBlocks.A_CONCRETE_LIME);
+        registerItemBlockModel(ModBlocks.A_CONCRETE_MAGENTA);
+        registerItemBlockModel(ModBlocks.A_CONCRETE_ORANGE);
+        registerItemBlockModel(ModBlocks.A_CONCRETE_PINK);
+        registerItemBlockModel(ModBlocks.A_CONCRETE_PURPLE);
+        registerItemBlockModel(ModBlocks.A_CONCRETE_RED);
+        registerItemBlockModel(ModBlocks.A_CONCRETE_SILVER);
         registerItemBlockModel(ModBlocks.A_CONCRETE_WHITE);
-
+        registerItemBlockModel(ModBlocks.A_CONCRETE_YELLOW);
 
         registerItemBlockModel(ModBlocks.A_GLASS_BLACK);
         registerItemBlockModel(ModBlocks.A_GLASS_BLUE);
@@ -57,7 +70,6 @@ public final class ClientEventSubscriber {
         registerItemBlockModel(ModBlocks.A_GLASS_WHITE);
         registerItemBlockModel(ModBlocks.A_GLASS_YELLOW);
 
-        /*
         registerItemBlockModel(ModBlocks.B_CONCRETE_BLACK);
         registerItemBlockModel(ModBlocks.B_CONCRETE_BLUE);
         registerItemBlockModel(ModBlocks.B_CONCRETE_BROWN);
@@ -69,7 +81,12 @@ public final class ClientEventSubscriber {
         registerItemBlockModel(ModBlocks.B_CONCRETE_MAGENTA);
         registerItemBlockModel(ModBlocks.B_CONCRETE_ORANGE);
         registerItemBlockModel(ModBlocks.B_CONCRETE_PINK);
-        */
+        registerItemBlockModel(ModBlocks.B_CONCRETE_PURPLE);
+        registerItemBlockModel(ModBlocks.B_CONCRETE_RED);
+        registerItemBlockModel(ModBlocks.B_CONCRETE_SILVER);
+        registerItemBlockModel(ModBlocks.B_CONCRETE_WHITE);
+        registerItemBlockModel(ModBlocks.B_CONCRETE_YELLOW);
+
         // Items
         registerItemModel(ModItems.GLASS_SHARD_BLACK);
         registerItemModel(ModItems.GLASS_SHARD_BLUE);
@@ -90,8 +107,8 @@ public final class ClientEventSubscriber {
         registerItemModel(ModItems.GLASS_SHARD_YELLOW);
 
         // Item Tools
-        //registerItemModel(ModItems.DIAMOND_GLASS_CUTTER);
-        //registerItemModel(ModItems.IRON_GLASS_CUTTER);
+        registerItemModel(ModItems.CUTTER_GLASS_DIAMOND);
+        registerItemModel(ModItems.CUTTER_GLASS_IRON);
 
         LOGGER.debug("Registered models");
     }
