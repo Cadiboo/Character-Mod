@@ -1,15 +1,27 @@
 This mapping 'stable_39' was designed for MC 1.12! Use at your own peril.This mapping 'stable_39' was designed for MC 1.12! Use at your own peril.
 
-#################################################
-         ForgeGradle 2.3-SNAPSHOT-7764e3e        
-  https://github.com/MinecraftForge/ForgeGradle  
-#################################################
-                 Powered by MCP                  
-             http://modcoderpack.com             
-     by: Searge, ProfMobius, R4wk, ZeuX          
-     Fesh0r, IngisKahn, bspkrs, LexManos         
-#################################################
+:deobfCompileDummyTask
+:deobfProvidedDummyTask
+:sourceApiJava UP-TO-DATE
+:compileApiJava UP-TO-DATE
+:processApiResources UP-TO-DATE
+:apiClasses UP-TO-DATE
+:sourceMainJava
+:compileJavaI:\Tima-2\Modding\IntelliJ\1.12.2\CharacterMod\build\sources\main\java\tk\diamondbuildz\mod\character\EventSubscriber.java:363: error: illegal start of expression
+        );
+        ^
+1 error
+ FAILED
 
-CONFIGURE SUCCESSFUL
+FAILURE: Build failed with an exception.
 
-Total time: 19.998 secs
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+BUILD FAILED
+
+Total time: 3.446 secs

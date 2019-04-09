@@ -9,7 +9,6 @@ import javax.annotation.Nonnull;
 public class BlockBase extends Block {
     public BlockBase(@Nonnull String name, @Nonnull Material material) {
         super(material);
-        ModUtil.setRegistryNames(this, name);
         ModUtil.setCreativeTab(this);
     }
 }
